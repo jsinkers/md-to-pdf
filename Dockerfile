@@ -4,6 +4,7 @@ LABEL "com.github.actions.name"="Markdown to PDF Generator"
 LABEL "com.github.actions.description"="Create PDF files from Markdown."
 
 RUN apt-get update
+RUN apt-get -y install make
 # set non-interactive installation
 RUN export DEBIAN_FRONTEND=noninteractive
 # install tzdata package
