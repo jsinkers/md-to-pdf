@@ -19,7 +19,7 @@ RUN wget -O pandoc.deb https://github.com/jgm/pandoc/releases/download/2.9.2/pan
 RUN dpkg -i pandoc.deb
 RUN apt-get -y install git
 RUN apt-get -y install texlive-full
-RUN apt-get -y install xelatex
+RUN apt-get -y install texlive-xetex
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
