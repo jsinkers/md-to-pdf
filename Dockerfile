@@ -21,7 +21,7 @@ RUN dpkg -i pandoc.deb
 RUN apt-get -y install git
 RUN apt-get -y install texlive-full
 RUN apt-get -y install texlive-xetex
-RUN apt-get -y install librsvg-bin
+RUN apt-get -y install librsvg2-bin
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
